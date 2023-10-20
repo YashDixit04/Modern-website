@@ -254,8 +254,8 @@ h3 {
         font-size: 9vw;
     }
     .iphone-img img{
-        width: 100vh;
-        height: 90vw;
+        width: 100vw;
+        height: 90vh;
         z-index: 0;
     }
 
