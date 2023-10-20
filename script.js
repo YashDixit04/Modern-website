@@ -40,7 +40,7 @@ document.querySelector(".page2>h1").textContent.split(" ").forEach(function (det
 
 })
 
-gsap.to('.page2>h1>span', {
+var anime = gsap.timeline({
     ScrollTrigger: {
         trigger: `.page2>h1>span`,
         start: `top bottom`,
@@ -48,7 +48,10 @@ gsap.to('.page2>h1>span', {
         scroller: '#main',
         scrub: .4,
         markers: true,
-    },
+    }
+})
+
+anime.to('.page2>h1>span', {
     stagger: .2,
     color: `#fff`
-})
+}, "anime")

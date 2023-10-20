@@ -131,9 +131,11 @@ h3 {
     justify-content: center;
     height: 44.8vh;
 }
-.iphone-img img{
+
+.iphone-img img {
     z-index: 999;
 }
+
 .loop {
     display: flex;
     height: 25%;
@@ -153,7 +155,7 @@ h3 {
 }
 
 .loop>h1>span {
-    -webkit-text-stroke: 1.2px  rgba(109, 109, 109, 0.34);
+    -webkit-text-stroke: 1.2px rgba(109, 109, 109, 0.34);
     color: transparent;
 }
 
@@ -178,7 +180,7 @@ h3 {
     flex-direction: column;
     padding: 0vw 8vw;
     color: whitesmoke;
-    
+
 }
 
 .page2>h2 {
@@ -199,6 +201,70 @@ h3 {
 .page3 {
     background: linear-gradient(to top, #141e30, #243b55);
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.apple_music {
+    position: absolute;
+}
+
+.apple-info,
+.apple-try,
+.apple-try-btn {
+    display: flex;
+
+}
+
+.apple-try {
+    justify-content: space-evenly;
+}
+
+.apple-info>h4 {
+    color: whitesmoke;
+    font-size: 3.9vh;
+}
+
+.apple-try>h2 {
+    width: 40vw;
+    font-size: 4.9vh;
+    color: whitesmoke;
+}
+
+.apple-info>a {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 7.9px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.apple-try {
+    flex-direction: row;
+}
+
+.apple-try-btn>a {
+    cursor: pointer;
+    height: fit-content;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 9.9px;
+    border-radius: 20px;
+}
+
+.apple-try-btn>a:nth-child(1) {
+    background-color: whitesmoke;
+    color: black;
 }
 
 @media (max-width:600px) {
@@ -210,18 +276,19 @@ h3 {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background-color: yellow;
+        background: linear-gradient(to top, #141e30, #243b55);
         top: 63px;
         left: -100%;
         text-align: center;
         flex-direction: column;
         transition: all .6s;
+        z-index: 999;
     }
 
     nav ul li {
         /* display: block; */
-        margin: 40px 0;
-        line-height: 30px;
+        margin: 20px 0;
+        line-height: 20px;
 
     }
 
@@ -239,9 +306,7 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-
-
-
+    
     /* page1  */
 
     .page1 {
@@ -253,10 +318,21 @@ h3 {
     h3 {
         font-size: 9vw;
     }
-    .iphone-img img{
-        width: 100vw;
-        height: 90vh;
+
+    .iphone-img img {
+        width: 90vh;
+        height: 100vw;
         z-index: 0;
     }
 
+    /* page3  */
+    .apple-try {
+        flex-direction: column;
+    }
+    .apple-try>h2 {
+        width: 90vw;
+    }
+    .apple-try-btn>a {
+       margin-top: 20px;
+    }
 }
