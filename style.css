@@ -256,6 +256,7 @@ h3 {
     .iphone-img img{
         width: 100vh;
         height: 90vw;
+        z-index: 1;
     }
 
 }
