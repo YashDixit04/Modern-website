@@ -186,6 +186,7 @@ h3 {
 .page2>h2 {
     margin-bottom: 4vw;
     font-weight: 100;
+    font-size: 2vh;
     text-transform: uppercase;
 }
 
@@ -193,7 +194,7 @@ h3 {
     width: 90%;
     line-height: 1.2;
     font-family: 100;
-    font-size: 3vw;
+    font-size: 3.4vh;
     color: #dadada69;
 }
 
