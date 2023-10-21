@@ -186,7 +186,7 @@ h3 {
 .page2>h2 {
     margin-bottom: 4vw;
     font-weight: 100;
-    font-size: 2vh;
+    font-size: 2.9vw;
     text-transform: uppercase;
 }
 
@@ -194,7 +194,7 @@ h3 {
     width: 90%;
     line-height: 1.2;
     font-family: 100;
-    font-size: 3.4vh;
+    font-size: 2vw;
     color: #dadada69;
 }
 
@@ -241,7 +241,7 @@ h3 {
     text-decoration: none;
     margin-left: 20px;
     cursor: pointer;
-    padding: 7.9px;
+    padding: 10px;
     text-align: center;
     font-size: 12px;
     border-radius: 20px;
@@ -307,7 +307,7 @@ h3 {
         display: flex;
         flex-direction: column;
     }
-    
+
     /* page1  */
 
     .page1 {
@@ -326,14 +326,25 @@ h3 {
         z-index: 0;
     }
 
+
+    /* page2  */
+    .page2>h2 {
+        font-size: 2.9vh;
+    }
+    .page2>h1 {
+        font-size: 2.4vh;
+    }
+
     /* page3  */
     .apple-try {
         flex-direction: column;
     }
+
     .apple-try>h2 {
         width: 90vw;
     }
+
     .apple-try-btn>a {
-       margin-top: 20px;
+        margin-top: 20px;
     }
 }
